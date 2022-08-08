@@ -12,7 +12,7 @@ data "azurerm_key_vault" "project" {
   resource_group_name = "S2-RG-project03-CORE"
 }
 data "azurerm_key_vault_secret" "secret0" {
-  name         = "ARM-RG"
+  name         = "ARM-RG-Project"
   key_vault_id = data.azurerm_key_vault.project.id
 }
 ### END KeyVault
